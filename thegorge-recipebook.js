@@ -54,7 +54,7 @@ function GetDishes() {
         error: function (jqXHR, textStatus, errorThrown) {
             FillList();
         }
-    });
+    })
 }
 
 function FillList() {
