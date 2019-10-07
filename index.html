@@ -1,0 +1,98 @@
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    body {
+        background: #0f0e15 url("images/background.jpg") no-repeat fixed center;
+		}
+		
+	div#thegorge{
+		margin-left: 15%;
+		width: 70%;
+		height: 70%;
+	}
+</style>
+
+<div id="thegorge">
+    <link rel="stylesheet" href="thegorge-recipebook.css">
+    <div class="recipebook-header">
+        <img class="recipebook-header-image" src="images/quagmire_recipe_menu_title.png" />
+        <h1 class="recipebook-header-title">Recipe Book</h1>
+    </div>
+    <div id="recipebook">
+        <div class="recipelist">
+            <img class="recipelist-divider top" src="images/quagmire_recipe_line.png" />
+            <ul class="recipelist-dishes"></ul>
+            <img class="recipelist-divider bottom" src="images/quagmire_recipe_line_bottom.png" />
+        </div>
+        <div class="recipedetails unknown">
+            <h2 class="dish-name">Unknown</h2>
+            <img class="dish-name-divider" src="images/quagmire_recipe_line_break.png" />
+            <div class="dish-header">
+                <div class="dish">
+                    <span class="dish-number"></span>
+                    <span class="dish-plating"></span>
+                    <span class="dish-icon"></span>
+                    <div class="icon-container">
+                        <span class="tribute-icon"></span>
+                        <span class="plating-tribute-icon"></span>
+                        <span class="cooking-station-icon"></span>
+                    </div>
+                </div>
+                <div class="dish-value">
+                    <div class="dish-attribute dish-tribute">
+                        <label>Stats</label>
+                        <img class="dish-attribute-divider" src="images/quagmire_recipe_line.png" />
+                        <div class="dish-attribute-content">
+                            <div class="coin8" title="Hungry" i18n-title="coin4"><span class="icon"></span><span class="value">0</span></div>
+                            <div class="coin7" title="Sanity" i18n-title="coin3"><span class="icon"></span><span class="value">0</span></div>
+                            <div class="coin6" title="Health" i18n-title="coin2"><span class="icon"></span><span class="value">0</span></div>
+							<div class="coin5" title="Rot" i18n-title="coin2"><span class="icon"></span><span class="value">0</span> days</div>
+                            <div class="empty" style="display: none;">None</div>
+                        </div>
+                    </div>
+                    <div class="dish-attribute dish-plate">
+                        <label>Offering</label>
+                        <img class="dish-attribute-divider" src="images/quagmire_recipe_line.png" />
+                        <div class="dish-attribute-content">
+                            <div class="coin4" title="Gnaw's Favor" i18n-title="coin4"><span class="value">0</span><span class="icon"></span></div>
+                            <div class="coin3" title="Red Mark" i18n-title="coin3"><span class="value">0</span><span class="icon"></span></div>
+                            <div class="coin2" title="Sapphire Medallion" i18n-title="coin2"><span class="value">0</span><span class="icon"></span></div>
+                            <div class="coin1" title="Old Coin" i18n-title="coin1"><span class="value">0</span><span class="icon"></span></div>
+                            <div class="empty" style="display: none;">None</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dish-stats">
+                <div class="dish-attribute dish-craving">
+                    <label>Satisfies Craving</label>
+                    <img class="dish-attribute-divider" src="images/quagmire_recipe_line.png" />
+                    <div class="dish-attribute-content">
+                        <span class="value"></span>
+                    </div>
+                </div>
+                <div class="dish-attribute dish-recipe">
+                    <label>Default Recipe</label>
+                    <img class="dish-attribute-divider" src="images/quagmire_recipe_line.png" />
+                    <div class="dish-attribute-content"></div>
+                </div>
+                <div class="dish-attribute dish-recipes">
+                    <label>Top recipes</label>
+                    <img class="dish-attribute-divider" src="images/quagmire_recipe_line.png" />
+                    <span class="value"></span>
+                </div>
+				 <div class="dish-attribute dish-bonuse">
+                    <label>Bonuses</label>
+                    <img class="dish-attribute-divider" src="images/quagmire_recipe_line.png" />
+                    <span class="value"></span>
+                </div>
+            </div>
+            <img class="recipedetails-flourish right" src="images/quagmire_recipe_corner_decoration_right.png" />
+            <img class="recipedetails-flourish left" src="images/quagmire_recipe_corner_decoration_left.png" />
+        </div>
+    </div>
+    <script src="thegorge-recipebook.js" charset="utf-8"></script>
+    <script src="thegorge-localize.js" charset="utf-8"></script>
+    <script src="thegorge-filter.js" charset="utf-8"></script>
+</div>
