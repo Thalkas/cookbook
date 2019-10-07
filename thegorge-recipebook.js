@@ -44,7 +44,7 @@ function GetDishes() {
         type: 'GET',
         url: "https://raw.githubusercontent.com/Thalkas/cookbook/master/recipedata.json",
         contentType: 'application/json; charset=utf-8',
-        dataType: 'json',
+        dataType: 'text',
         success: function (data) {
             if (data) {
                 discovered_dishes = data;
