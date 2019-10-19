@@ -42,7 +42,7 @@ $(document).ready(function () {
 function GetDishes() {
     $.ajax({
         type: 'GET',
-        url: "https://raw.githubusercontent.com/Thalkas/cookbook/master/public/recipedata.json",
+        url: "https://github.com/Thalkas/cookbook/blob/master/public/recipedata.json",
         contentType: 'application/json; charset=utf-8',
         dataType: 'text',
         success: function (data) {
