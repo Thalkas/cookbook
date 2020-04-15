@@ -40,21 +40,15 @@ $(document).ready(function () {
 });
 
 function GetDishes() {
-    $.ajax({
-        type: 'GET',
-        url: "https://github.com/Thalkas/cookbook/blob/master/public/recipedata.json",
-        contentType: 'application/json; charset=utf-8',
-        dataType: 'text',
-        success: function (data) {
-            if (data) {
-                discovered_dishes = data;
-                FillList();
-            }
-        }.bind(this),
-        error: function (jqXHR, textStatus, errorThrown) {
-            FillList();
-        }
-    })
+        "image": "images/dishes/bread.png",
+        "name": "Bread",
+        "dish": "plate_silver",
+        "coins": [6, 0, 0, 0],
+        "silver_coins": [2, 1, 0, 0],
+        "cravings": ["snack", "bread"],
+        "station": ["oven"],
+        "finder": ["emacs", "illusion", "BigGayMime"],
+        "ingredients": [["quagmire_flour", "quagmire_flour", "quagmire_flour"], ["quagmire_flour", "quagmire_flour", "quagmire_flour", "quagmire_flour"]]
 }
 
 function FillList() {
