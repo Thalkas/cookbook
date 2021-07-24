@@ -1,7 +1,7 @@
 /* eslint-env jquery, browser */
 
 var recipe_count = 72;
-var discovered_count = 0;
+var discovered_count = 72;
 
 var discovered_dishes = {};
 
